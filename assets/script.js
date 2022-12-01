@@ -139,7 +139,7 @@ function generatePassword() {
   if (options == null) {
     return;
   }
-
+//added concatination 
   var validCharacters = [];
   if (options.includeSpecialCharacters === true) {
     validCharacters = validCharacters.concat(specialCharacters);
@@ -147,7 +147,13 @@ function generatePassword() {
   if (options.includeNumericCharacters === true) {
     validCharacters = validCharacters.concat(numericCharacters);
   }
-  // add other ones
+  if (options.includeLowerCasedCharacters === true) {
+    validCharacters = validCharacters.concat(lowerCasedCharacters);
+  }
+  if (options.includeUpperCasedCharacters === true) {
+    validCharacters = validCharacters.concat(upperCasedCharacters);
+  }
+  
 
   var password = "";
 
