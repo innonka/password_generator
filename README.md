@@ -20,3 +20,5 @@ This project generates a password when the button is clicked. The application ca
 ![alt text](assets/Screenshot01.png)
 
 ## Deployment
+
+https://innonka.github.io/password_generator/
